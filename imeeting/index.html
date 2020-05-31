@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <title>iMeeting</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        @keyframes slidefromup{
+            0%{
+                color: white;
+            }
+
+            100%{
+                color: black;
+            }
+        }
+
+        @keyframes appear{
+            0%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+
+        body{
+            margin:0;
+            padding:0;
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: cover;
+        }
+
+        .container{
+            margin-top:200px; 
+            position: relative;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.692);
+            padding-top:5px;
+            padding-bottom:50px;
+        }
+
+        .container2{
+            display:flex;
+            position: relative;
+            justify-content: center;
+            margin-top:40px;
+        }
+
+        .card + .card{
+            margin-left:125px;
+        }
+
+        .card{
+            width:80px;
+            padding-top:5px;
+            border: 2px solid rgb(153, 255, 153);
+            background-color: rgb(153, 255, 153);
+            text-align: center;
+            font-family: 'Teko', sans-serif;
+            font-size: 30px;
+            transition:1s;
+        }
+
+        .card:hover{
+            background-color: white;
+        }
+
+        body div div div:hover{
+            transition-duration: 0.5s;
+            transform: translateY(-6px);
+        }
+
+        body div div div a{
+            text-decoration: none;
+            color:black;
+        }
+
+        body div p{
+            animation-name: slidefromup;
+            animation-duration: 2s;
+        }
+
+        body div p2{
+            animation-name: slidefromup;
+            animation-duration: 3s;
+        }
+
+        body div div{
+            animation-name: appear;
+            animation-duration: 3s;
+        }
+
+        .title{
+            font-size: 70px;
+            font-family: 'Supermercado One', cursive;
+
+        }
+
+        .description{
+            padding-top:5px;
+            font-size: 35px;
+            font-family: 'Poiret One', cursive;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <p class="title">iMeeting</p>
+            <p2 class="description">Book a meeting room easily and fast</p2>
+
+            <div class="container2">
+                    <div class="card">
+                        <a href="signup_normal.php">RENT</a>
+                    </div>
+                    <div class="card">
+                        <a href="signup_host.php">HOST</a>
+                    </div>
+            </div>
+    </div>
+</body>
+
+
+</html>
